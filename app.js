@@ -12,8 +12,6 @@ var connection = require('./models/mysql_connection');
 require('./models/mongoose_database');
 
 
-
-
 //app initiation
 app.disable('x-powered-by');//protect server imformation from header
 app.set('view engine' , 'ejs');

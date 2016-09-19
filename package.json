@@ -18,5 +18,14 @@
     "mysql": "^2.11.1",
     "nodemon": "^1.10.2",
     "path": "^0.12.7"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gundamroge/APP.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gundamroge/APP/issues"
+  },
+  "homepage": "https://github.com/gundamroge/APP#readme"
 }
