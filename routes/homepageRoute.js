@@ -6,19 +6,12 @@ router.get('/genre',function(req,res){
 	// change the commodities to corresponding genre
 	res.redirect('/');
 });
-
-
-
 //////////////////////////////////////
 //goes to the info page, lets 'personalRoutes.js' handle it
 router.get('/info', function(req,res){
 	// get personal info
 	//renders new page
 	res.render('info',{
-
-
-
-
 	});
 });
 
@@ -30,9 +23,6 @@ router.get('/commodities' , function(req,res){
 
 	});
 });
-
-
-
 //////////////////////////
 router.post('/search', function(req,res){
 	//the search bar
@@ -42,8 +32,6 @@ router.post('/search', function(req,res){
 
 	});
 });
-
-
 router.get('/notification', function(req,res){
 	//the notifications
 	res.render('noification',{

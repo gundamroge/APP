@@ -13,10 +13,6 @@ router.post('/comments', function(req,res){
 router.post('/lineup', function(req,res){
 	//updates the lineup thinghy of that particular commodity
 		//LOGIC <--------!!!!!!
-
-
-
-
 	res.redirect('/');
 });
 
@@ -43,7 +39,5 @@ router.get('/others:id' , function(req,res){
 		////					////
 	});
 });
-
-
 
 module.exports = router;

@@ -2,8 +2,6 @@ var express = require('express');
 var router = express.Router();
 //has '/info' added in front of its route from app.js middleware
 
-
-
 //the personal image
 router.get('/img' , function(req,res){
 	//the img page, to change it or look at it
@@ -12,19 +10,12 @@ router.get('/img' , function(req,res){
 		// shows out the large picture <------- should b able to change with jquery i hop -------------------------
 	});
 });
-
 router.post('/img/change', function(req,res){
 	//user changing the img
-
-
-
 	//LIGIC!!!!!! <---- HERE!!!!
 	res.redirect('/');
 		//changed picture
 });
-
-
-
 //personal info
 router.post('/change', function(req,res){
 	//user changing the img
@@ -37,9 +28,6 @@ router.post('/change', function(req,res){
 		//changed personal info text
 
 });
-
-
-
 //transaction
 router.get('/others:id' , function(req,res){
 	//the others info page, to look at it, and to leave comments too
@@ -50,8 +38,6 @@ router.get('/others:id' , function(req,res){
 		////					////
 	});
 });
-
-
 router.post('/others:id/comments', function(req,res){
 	// posting the comments
 	// methods goes after this

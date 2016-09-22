@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NCCU Second Handed Auction</title>
+	<link rel="stylesheet" type="text/css" href="/css/main.css"/>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+</head>
+<body>
+	<header id="header">
+		<div class="inner" style="width:1024px">
+			<a href="/" class="logo">NCCU Second Hand Auction</a>
+			<nav id="nav">
+				{{#if loginView}}
+				<a href="/post">我要賣</a>
+				<a href="/account">我的帳號({{user}})</a>
+				<a href="/logout">登出</a>
+				{{else}}
+				<a href="/register">註冊</a>
+				<a href="/login">登入</a>
+				{{/if}}
+			</nav>
+		</div>
+	</header>
+
+{{{body}}}
+
+	<section id="footer">
+		<div class="inner">
+			<header>
+				<h2>NCCU  Secondhand  Auction</h2>
+			</header>
+			<div class="copyright">
+				&copy; Untitled Design: <a href="https://templated.co/">TEMPLATED</a>. Images <a href="https://unsplash.com/">Unsplash</a>
+			</div>
+		</div>
+	</section>
+</body>
+</html>
