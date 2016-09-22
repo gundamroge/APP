@@ -3,31 +3,31 @@
 
 # In[ ]:
 
-def matching(istring , lstring):
-    for words in istring.split():
-        if words in lstring.split(','):
-            return True
+def matching(istring , lstring): # inputString , libraryKeyString
+    for words in istring.split(): #loops through input
+        if words in lstring.split(','):		# find matching words
+            return True				# pops out
         
 bot_says = {"sad,pissed,angry,punch,kick,swear,lonely,puke,screw,ass,suck": "'Don\'t worry"", eveything\'s gonna b alright baby, I'm right here with ya yo'" , 
       "happy,joy,excited,hype,good,joyful,kiss,yay,ya,woohoo,like,love":"'Well someone seems happy," \
       "I'm happy for you too bby!'"
       }
 c_times = int( input("How many times do ya wanna chat with this bot?: --> ") )
-times = 0
+times = 0 # track chattin times
 while True:
-    not_in_database = 1
+    
     user_says = input('whatcha wanna chat about?? : --> ')
     
     for key in bot_says.keys():
-        if matching(user_says,key):
-            print(bot_says[key] , )
+        if matching(user_says,key): 
+            print(bot_says[key] , ending = '')
             not_in_database = 0
             
     if not_in_database == 1:
         print("'Ya I don't really give a dayum crap about you now,chat with me when u "              "wanna have a real conversation ya punk!'")
-    c_times -= 1 
-    times += 1
-    if c_times ==0:
+    c_times -= 1 # tracking
+    times += 1 # tracking
+    if c_times ==0: #comes first
         break
     end = input('Wanna finish this conversation earlier?("Y" or "Yes" to quit) : --> ')
     end = end.upper()
